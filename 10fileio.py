@@ -96,7 +96,7 @@ with open(fname) as f:
         if embarked == 'S': embarked = 'southAmp'
         elif embarked == 'Q': embarked = 'Queenstown'
         elif embarked == 'C': embarked = 'Cherbourg'
-        survived = '생존' if data[1] == '0' else '사망'
+        survived = '사망' if data[1] == '0' else '생존'
 
         psegr = f'{sex} {age} {embarked} {survived}'
         print(psegr)
