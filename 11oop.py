@@ -127,7 +127,7 @@ print(redCar)
 # 성적 처리를 위한 성적 클래스를 정의하세요
 # 이름, 국어, 영어, 수학, 총점, 평균, 학점으로 구성
 class SungJuk:
-    def __init__(self, name, kor, eng, math, tot=0, avg=0, mean=0, grd='사'):
+    def __init__(self, name, kor, eng, math, tot=0, avg=0, mean=0, grd='가'):
         self.name = name
         self.kor = kor
         self.eng = eng
@@ -142,6 +142,11 @@ class SungJuk:
 
 sj1 = SungJuk('익명', 90, 100, 70)
 print(sj1)
+
+print(sj1.name)
+print(sj1.kor)
+print(sj1.eng)
+print(sj1.math)
 
 
 # 사원 관리를 위한 사원 클래스를 정의하세요
@@ -166,3 +171,6 @@ class Employee:
 
 emp = Employee(111, '익명', '김', '010-2345-6789', 'anonymous@email.com', '2021-07-09', 'JOB', 78900, 0, 100, 90)
 print(emp)
+
+
+
